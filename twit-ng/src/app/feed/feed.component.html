@@ -1,6 +1,15 @@
-<div class="ui segment">
-  <p>
+<p>
   feed works!
+  </p>
+  
+  
+<div class="ui segment" *ngFor='let tweet of tweets'>
+  <a class="avatar">
+  <img src="{{tweet.avatars}}"/>
+  </a>
+<strong>{{tweet.author}}</strong>
+  <p>
+  {{tweet.text}}
   </p>
 </div>
 
